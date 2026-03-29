@@ -1,0 +1,57 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: chess_teacher_ai
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  api:
+    build:
+      context: ./api
+    environment:
+      DATABASE_URL: postgresql+psycopg://app:app@postgres:5432/chess_teacher_ai
+      CELERY_BROKER_URL: amqp://guest:guest@rabbitmq:5672//
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+    depends_on:
+      - postgres
+      - rabbitmq
+      - redis
+    ports:
+      - "8000:8000"
+
+  worker:
+    build:
+      context: ./worker
+    environment:
+      DATABASE_URL: postgresql+psycopg://app:app@postgres:5432/chess_teacher_ai
+      CELERY_BROKER_URL: amqp://guest:guest@rabbitmq:5672//
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+      TWIC_STORAGE_DIR: /data/twic
+    depends_on:
+      - postgres
+      - rabbitmq
+      - redis
+    volumes:
+      - twicdata:/data/twic
+
+volumes:
+  pgdata:
+  twicdata:
