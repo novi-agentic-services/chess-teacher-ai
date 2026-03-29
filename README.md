@@ -19,6 +19,9 @@ API:
 - `GET /health`
 - `GET /api/twic/status`
 - `POST /api/twic/sync`
+- `GET /api/games/search`
+- `GET /api/games/{id}`
+- `GET /api/positions/tree?fen=...`
 
 ## Notes
 - TWIC source list endpoint may evolve over time; parser is isolated in `api/app/twic.py` for easy updates.
