@@ -1,0 +1,2403 @@
+{
+  "zip_count": 300,
+  "pgn_count": 298,
+  "total_games_estimate": 2071004,
+  "issues_min": 1337,
+  "issues_max": 1637,
+  "items": [
+    {
+      "issue": 1337,
+      "zip": "twic1337g.zip",
+      "pgn": "twic1337.pgn",
+      "size_bytes": 7259608,
+      "games": 8133,
+      "status": "ok"
+    },
+    {
+      "issue": 1338,
+      "zip": "twic1338g.zip",
+      "pgn": "twic1338.pgn",
+      "size_bytes": 3763085,
+      "games": 4236,
+      "status": "ok"
+    },
+    {
+      "issue": 1339,
+      "zip": "twic1339g.zip",
+      "pgn": "twic1339.pgn",
+      "size_bytes": 6229113,
+      "games": 7351,
+      "status": "ok"
+    },
+    {
+      "issue": 1340,
+      "zip": "twic1340g.zip",
+      "pgn": "twic1340.pgn",
+      "size_bytes": 4126631,
+      "games": 4685,
+      "status": "ok"
+    },
+    {
+      "issue": 1341,
+      "zip": "twic1341g.zip",
+      "pgn": "twic1341.pgn",
+      "size_bytes": 5403460,
+      "games": 6009,
+      "status": "ok"
+    },
+    {
+      "issue": 1342,
+      "zip": "twic1342g.zip",
+      "pgn": "twic1342.pgn",
+      "size_bytes": 3555606,
+      "games": 4004,
+      "status": "ok"
+    },
+    {
+      "issue": 1343,
+      "zip": "twic1343g.zip",
+      "pgn": "twic1343.pgn",
+      "size_bytes": 2112431,
+      "games": 2331,
+      "status": "ok"
+    },
+    {
+      "issue": 1344,
+      "zip": "twic1344g.zip",
+      "pgn": "twic1344.pgn",
+      "size_bytes": 6807543,
+      "games": 7664,
+      "status": "ok"
+    },
+    {
+      "issue": 1345,
+      "zip": "twic1345g.zip",
+      "pgn": "twic1345.pgn",
+      "size_bytes": 4902730,
+      "games": 5495,
+      "status": "ok"
+    },
+    {
+      "issue": 1346,
+      "zip": "twic1346g.zip",
+      "pgn": "twic1346.pgn",
+      "size_bytes": 4485353,
+      "games": 4999,
+      "status": "ok"
+    },
+    {
+      "issue": 1347,
+      "zip": "twic1347g.zip",
+      "pgn": "twic1347.pgn",
+      "size_bytes": 3541520,
+      "games": 4000,
+      "status": "ok"
+    },
+    {
+      "issue": 1348,
+      "zip": "twic1348g.zip",
+      "pgn": "twic1348.pgn",
+      "size_bytes": 4393506,
+      "games": 5044,
+      "status": "ok"
+    },
+    {
+      "issue": 1349,
+      "zip": "twic1349g.zip",
+      "pgn": "twic1349.pgn",
+      "size_bytes": 5254360,
+      "games": 5823,
+      "status": "ok"
+    },
+    {
+      "issue": 1350,
+      "zip": "twic1350g.zip",
+      "pgn": "twic1350.pgn",
+      "size_bytes": 5018325,
+      "games": 5724,
+      "status": "ok"
+    },
+    {
+      "issue": 1351,
+      "zip": "twic1351g.zip",
+      "pgn": "twic1351.pgn",
+      "size_bytes": 5975117,
+      "games": 6814,
+      "status": "ok"
+    },
+    {
+      "issue": 1352,
+      "zip": "twic1352g.zip",
+      "pgn": "twic1352.pgn",
+      "size_bytes": 5078706,
+      "games": 5654,
+      "status": "ok"
+    },
+    {
+      "issue": 1353,
+      "zip": "twic1353g.zip",
+      "pgn": "twic1353.pgn",
+      "size_bytes": 2777452,
+      "games": 3056,
+      "status": "ok"
+    },
+    {
+      "issue": 1354,
+      "zip": "twic1354g.zip",
+      "pgn": "twic1354.pgn",
+      "size_bytes": 4936519,
+      "games": 5589,
+      "status": "ok"
+    },
+    {
+      "issue": 1355,
+      "zip": "twic1355g.zip",
+      "pgn": "twic1355.pgn",
+      "size_bytes": 3388889,
+      "games": 3669,
+      "status": "ok"
+    },
+    {
+      "issue": 1356,
+      "zip": "twic1356g.zip",
+      "pgn": "twic1356.pgn",
+      "size_bytes": 4489708,
+      "games": 4990,
+      "status": "ok"
+    },
+    {
+      "issue": 1357,
+      "zip": "twic1357g.zip",
+      "pgn": "twic1357.pgn",
+      "size_bytes": 3259879,
+      "games": 3680,
+      "status": "ok"
+    },
+    {
+      "issue": 1358,
+      "zip": "twic1358g.zip",
+      "pgn": "twic1358.pgn",
+      "size_bytes": 3556839,
+      "games": 4039,
+      "status": "ok"
+    },
+    {
+      "issue": 1359,
+      "zip": "twic1359g.zip",
+      "pgn": "twic1359.pgn",
+      "size_bytes": 4584447,
+      "games": 5195,
+      "status": "ok"
+    },
+    {
+      "issue": 1360,
+      "zip": "twic1360g.zip",
+      "pgn": "twic1360.pgn",
+      "size_bytes": 4427654,
+      "games": 5067,
+      "status": "ok"
+    },
+    {
+      "issue": 1361,
+      "zip": "twic1361g.zip",
+      "pgn": "twic1361.pgn",
+      "size_bytes": 4616062,
+      "games": 5193,
+      "status": "ok"
+    },
+    {
+      "issue": 1362,
+      "zip": "twic1362g.zip",
+      "pgn": "twic1362.pgn",
+      "size_bytes": 1849073,
+      "games": 2109,
+      "status": "ok"
+    },
+    {
+      "issue": 1363,
+      "zip": "twic1363g.zip",
+      "pgn": "twic1363.pgn",
+      "size_bytes": 8795123,
+      "games": 9772,
+      "status": "ok"
+    },
+    {
+      "issue": 1364,
+      "zip": "twic1364g.zip",
+      "pgn": "twic1364.pgn",
+      "size_bytes": 4033806,
+      "games": 4400,
+      "status": "ok"
+    },
+    {
+      "issue": 1365,
+      "zip": "twic1365g.zip",
+      "pgn": "twic1365.pgn",
+      "size_bytes": 5369093,
+      "games": 6020,
+      "status": "ok"
+    },
+    {
+      "issue": 1366,
+      "zip": "twic1366g.zip",
+      "pgn": "twic1366.pgn",
+      "size_bytes": 5110103,
+      "games": 6006,
+      "status": "ok"
+    },
+    {
+      "issue": 1367,
+      "zip": "twic1367g.zip",
+      "pgn": "twic1367.pgn",
+      "size_bytes": 3790227,
+      "games": 4218,
+      "status": "ok"
+    },
+    {
+      "issue": 1368,
+      "zip": "twic1368g.zip",
+      "pgn": "twic1368.pgn",
+      "size_bytes": 3845607,
+      "games": 4408,
+      "status": "ok"
+    },
+    {
+      "issue": 1369,
+      "zip": "twic1369g.zip",
+      "pgn": "twic1369.pgn",
+      "size_bytes": 3094642,
+      "games": 3361,
+      "status": "ok"
+    },
+    {
+      "issue": 1370,
+      "zip": "twic1370g.zip",
+      "pgn": "twic1370.pgn",
+      "size_bytes": 4753415,
+      "games": 5511,
+      "status": "ok"
+    },
+    {
+      "issue": 1371,
+      "zip": "twic1371g.zip",
+      "pgn": "twic1371.pgn",
+      "size_bytes": 6392216,
+      "games": 7377,
+      "status": "ok"
+    },
+    {
+      "issue": 1372,
+      "zip": "twic1372g.zip",
+      "pgn": "twic1372.pgn",
+      "size_bytes": 8935237,
+      "games": 10638,
+      "status": "ok"
+    },
+    {
+      "issue": 1373,
+      "zip": "twic1373g.zip",
+      "pgn": "twic1373.pgn",
+      "size_bytes": 4155259,
+      "games": 4681,
+      "status": "ok"
+    },
+    {
+      "issue": 1374,
+      "zip": "twic1374g.zip",
+      "pgn": "twic1374.pgn",
+      "size_bytes": 8814360,
+      "games": 10203,
+      "status": "ok"
+    },
+    {
+      "issue": 1375,
+      "zip": "twic1375g.zip",
+      "pgn": "twic1375.pgn",
+      "size_bytes": 6750925,
+      "games": 8282,
+      "status": "ok"
+    },
+    {
+      "issue": 1376,
+      "zip": "twic1376g.zip",
+      "pgn": "twic1376.pgn",
+      "size_bytes": 6879529,
+      "games": 8623,
+      "status": "ok"
+    },
+    {
+      "issue": 1377,
+      "zip": "twic1377g.zip",
+      "pgn": "twic1377.pgn",
+      "size_bytes": 5042656,
+      "games": 5450,
+      "status": "ok"
+    },
+    {
+      "issue": 1378,
+      "zip": "twic1378g.zip",
+      "pgn": "twic1378.pgn",
+      "size_bytes": 5208670,
+      "games": 5980,
+      "status": "ok"
+    },
+    {
+      "issue": 1379,
+      "zip": "twic1379g.zip",
+      "pgn": "twic1379.pgn",
+      "size_bytes": 7822130,
+      "games": 8846,
+      "status": "ok"
+    },
+    {
+      "issue": 1380,
+      "zip": "twic1380g.zip",
+      "pgn": "twic1380.pgn",
+      "size_bytes": 4758144,
+      "games": 5669,
+      "status": "ok"
+    },
+    {
+      "issue": 1381,
+      "zip": "twic1381g.zip",
+      "pgn": "twic1381.pgn",
+      "size_bytes": 2936647,
+      "games": 3316,
+      "status": "ok"
+    },
+    {
+      "issue": 1382,
+      "zip": "twic1382g.zip",
+      "pgn": "twic1382.pgn",
+      "size_bytes": 2826383,
+      "games": 3202,
+      "status": "ok"
+    },
+    {
+      "issue": 1383,
+      "zip": "twic1383g.zip",
+      "pgn": "twic1383.pgn",
+      "size_bytes": 3176497,
+      "games": 3502,
+      "status": "ok"
+    },
+    {
+      "issue": 1384,
+      "zip": "twic1384g.zip",
+      "pgn": "twic1384.pgn",
+      "size_bytes": 7709273,
+      "games": 8794,
+      "status": "ok"
+    },
+    {
+      "issue": 1385,
+      "zip": "twic1385g.zip",
+      "pgn": "twic1385.pgn",
+      "size_bytes": 3034506,
+      "games": 3439,
+      "status": "ok"
+    },
+    {
+      "issue": 1386,
+      "zip": "twic1386g.zip",
+      "pgn": "twic1386.pgn",
+      "size_bytes": 6341373,
+      "games": 7074,
+      "status": "ok"
+    },
+    {
+      "issue": 1387,
+      "zip": "twic1387g.zip",
+      "pgn": "twic1387.pgn",
+      "size_bytes": 6870979,
+      "games": 7734,
+      "status": "ok"
+    },
+    {
+      "issue": 1388,
+      "zip": "twic1388g.zip",
+      "pgn": "twic1388.pgn",
+      "size_bytes": 4281425,
+      "games": 4949,
+      "status": "ok"
+    },
+    {
+      "issue": 1389,
+      "zip": "twic1389g.zip",
+      "pgn": "twic1389.pgn",
+      "size_bytes": 3003075,
+      "games": 3393,
+      "status": "ok"
+    },
+    {
+      "issue": 1390,
+      "zip": "twic1390g.zip",
+      "pgn": "twic1390.pgn",
+      "size_bytes": 4306746,
+      "games": 4840,
+      "status": "ok"
+    },
+    {
+      "issue": 1391,
+      "zip": "twic1391g.zip",
+      "pgn": "twic1391.pgn",
+      "size_bytes": 4263987,
+      "games": 4742,
+      "status": "ok"
+    },
+    {
+      "issue": 1392,
+      "zip": "twic1392g.zip",
+      "pgn": "twic1392.pgn",
+      "size_bytes": 5445896,
+      "games": 6207,
+      "status": "ok"
+    },
+    {
+      "issue": 1393,
+      "zip": "twic1393g.zip",
+      "pgn": "twic1393.pgn",
+      "size_bytes": 4444925,
+      "games": 5108,
+      "status": "ok"
+    },
+    {
+      "issue": 1394,
+      "zip": "twic1394g.zip",
+      "pgn": "twic1394.pgn",
+      "size_bytes": 4329728,
+      "games": 4984,
+      "status": "ok"
+    },
+    {
+      "issue": 1395,
+      "zip": "twic1395g.zip",
+      "pgn": "twic1395.pgn",
+      "size_bytes": 4767980,
+      "games": 5447,
+      "status": "ok"
+    },
+    {
+      "issue": 1396,
+      "zip": "twic1396g.zip",
+      "pgn": "twic1396.pgn",
+      "size_bytes": 4920080,
+      "games": 5631,
+      "status": "ok"
+    },
+    {
+      "issue": 1397,
+      "zip": "twic1397g.zip",
+      "pgn": "twic1397.pgn",
+      "size_bytes": 5117125,
+      "games": 5812,
+      "status": "ok"
+    },
+    {
+      "issue": 1398,
+      "zip": "twic1398g.zip",
+      "pgn": "twic1398.pgn",
+      "size_bytes": 6575189,
+      "games": 7828,
+      "status": "ok"
+    },
+    {
+      "issue": 1399,
+      "zip": "twic1399g.zip",
+      "pgn": "twic1399.pgn",
+      "size_bytes": 6156208,
+      "games": 7051,
+      "status": "ok"
+    },
+    {
+      "issue": 1400,
+      "zip": "twic1400g.zip",
+      "pgn": "twic1400.pgn",
+      "size_bytes": 5660490,
+      "games": 6273,
+      "status": "ok"
+    },
+    {
+      "issue": 1401,
+      "zip": "twic1401g.zip",
+      "pgn": "twic1401.pgn",
+      "size_bytes": 6807044,
+      "games": 7542,
+      "status": "ok"
+    },
+    {
+      "issue": 1402,
+      "zip": "twic1402g.zip",
+      "pgn": "twic1402.pgn",
+      "size_bytes": 5051031,
+      "games": 5713,
+      "status": "ok"
+    },
+    {
+      "issue": 1403,
+      "zip": "twic1403g.zip",
+      "pgn": "twic1403.pgn",
+      "size_bytes": 5252104,
+      "games": 6080,
+      "status": "ok"
+    },
+    {
+      "issue": 1404,
+      "zip": "twic1404g.zip",
+      "pgn": "twic1404.pgn",
+      "size_bytes": 4840446,
+      "games": 5493,
+      "status": "ok"
+    },
+    {
+      "issue": 1405,
+      "zip": "twic1405g.zip",
+      "pgn": "twic1405.pgn",
+      "size_bytes": 5243700,
+      "games": 5910,
+      "status": "ok"
+    },
+    {
+      "issue": 1406,
+      "zip": "twic1406g.zip",
+      "pgn": "twic1406.pgn",
+      "size_bytes": 5626164,
+      "games": 6230,
+      "status": "ok"
+    },
+    {
+      "issue": 1407,
+      "zip": "twic1407g.zip",
+      "pgn": "twic1407.pgn",
+      "size_bytes": 4656604,
+      "games": 5330,
+      "status": "ok"
+    },
+    {
+      "issue": 1408,
+      "zip": "twic1408g.zip",
+      "pgn": "twic1408.pgn",
+      "size_bytes": 5696438,
+      "games": 6518,
+      "status": "ok"
+    },
+    {
+      "issue": 1409,
+      "zip": "twic1409g.zip",
+      "pgn": "twic1409.pgn",
+      "size_bytes": 4841244,
+      "games": 5353,
+      "status": "ok"
+    },
+    {
+      "issue": 1410,
+      "zip": "twic1410g.zip",
+      "pgn": "twic1410.pgn",
+      "size_bytes": 3673099,
+      "games": 4140,
+      "status": "ok"
+    },
+    {
+      "issue": 1411,
+      "zip": "twic1411g.zip",
+      "pgn": "twic1411.pgn",
+      "size_bytes": 3890044,
+      "games": 4314,
+      "status": "ok"
+    },
+    {
+      "issue": 1412,
+      "zip": "twic1412g.zip",
+      "pgn": "twic1412.pgn",
+      "size_bytes": 3431035,
+      "games": 3944,
+      "status": "ok"
+    },
+    {
+      "issue": 1413,
+      "zip": "twic1413g.zip",
+      "pgn": "twic1413.pgn",
+      "size_bytes": 3256221,
+      "games": 3685,
+      "status": "ok"
+    },
+    {
+      "issue": 1414,
+      "zip": "twic1414g.zip",
+      "pgn": "twic1414.pgn",
+      "size_bytes": 3312968,
+      "games": 3720,
+      "status": "ok"
+    },
+    {
+      "issue": 1415,
+      "zip": "twic1415g.zip",
+      "pgn": "twic1415.pgn",
+      "size_bytes": 6500436,
+      "games": 7439,
+      "status": "ok"
+    },
+    {
+      "issue": 1416,
+      "zip": "twic1416g.zip",
+      "pgn": "twic1416.pgn",
+      "size_bytes": 2776764,
+      "games": 3099,
+      "status": "ok"
+    },
+    {
+      "issue": 1417,
+      "zip": "twic1417g.zip",
+      "pgn": "twic1417.pgn",
+      "size_bytes": 6687321,
+      "games": 7406,
+      "status": "ok"
+    },
+    {
+      "issue": 1418,
+      "zip": "twic1418g.zip",
+      "pgn": "twic1418.pgn",
+      "size_bytes": 4567279,
+      "games": 5252,
+      "status": "ok"
+    },
+    {
+      "issue": 1419,
+      "zip": "twic1419g.zip",
+      "pgn": "twic1419.pgn",
+      "size_bytes": 2946355,
+      "games": 3358,
+      "status": "ok"
+    },
+    {
+      "issue": 1420,
+      "zip": "twic1420g.zip",
+      "pgn": "twic1420.pgn",
+      "size_bytes": 3036078,
+      "games": 3492,
+      "status": "ok"
+    },
+    {
+      "issue": 1421,
+      "zip": "twic1421g.zip",
+      "pgn": "twic1421.pgn",
+      "size_bytes": 4238752,
+      "games": 4944,
+      "status": "ok"
+    },
+    {
+      "issue": 1422,
+      "zip": "twic1422g.zip",
+      "pgn": "twic1422.pgn",
+      "size_bytes": 6117423,
+      "games": 6983,
+      "status": "ok"
+    },
+    {
+      "issue": 1423,
+      "zip": "twic1423g.zip",
+      "pgn": "twic1423.pgn",
+      "size_bytes": 4706245,
+      "games": 5291,
+      "status": "ok"
+    },
+    {
+      "issue": 1424,
+      "zip": "twic1424g.zip",
+      "pgn": "twic1424.pgn",
+      "size_bytes": 5261535,
+      "games": 5942,
+      "status": "ok"
+    },
+    {
+      "issue": 1425,
+      "zip": "twic1425g.zip",
+      "pgn": "twic1425.pgn",
+      "size_bytes": 5084208,
+      "games": 5727,
+      "status": "ok"
+    },
+    {
+      "issue": 1426,
+      "zip": "twic1426g.zip",
+      "pgn": "twic1426.pgn",
+      "size_bytes": 5883753,
+      "games": 6838,
+      "status": "ok"
+    },
+    {
+      "issue": 1427,
+      "zip": "twic1427g.zip",
+      "pgn": "twic1427.pgn",
+      "size_bytes": 4188793,
+      "games": 4742,
+      "status": "ok"
+    },
+    {
+      "issue": 1428,
+      "zip": "twic1428g.zip",
+      "pgn": "twic1428.pgn",
+      "size_bytes": 4159284,
+      "games": 4674,
+      "status": "ok"
+    },
+    {
+      "issue": 1429,
+      "zip": "twic1429g.zip",
+      "pgn": "twic1429.pgn",
+      "size_bytes": 4901753,
+      "games": 5426,
+      "status": "ok"
+    },
+    {
+      "issue": 1430,
+      "zip": "twic1430g.zip",
+      "pgn": "twic1430.pgn",
+      "size_bytes": 6194399,
+      "games": 7195,
+      "status": "ok"
+    },
+    {
+      "issue": 1431,
+      "zip": "twic1431g.zip",
+      "pgn": "twic1431.pgn",
+      "size_bytes": 5668481,
+      "games": 6430,
+      "status": "ok"
+    },
+    {
+      "issue": 1432,
+      "zip": "twic1432g.zip",
+      "pgn": "twic1432.pgn",
+      "size_bytes": 4619121,
+      "games": 5236,
+      "status": "ok"
+    },
+    {
+      "issue": 1433,
+      "zip": "twic1433g.zip",
+      "pgn": "twic1433.pgn",
+      "size_bytes": 5214898,
+      "games": 5829,
+      "status": "ok"
+    },
+    {
+      "issue": 1434,
+      "zip": "twic1434g.zip",
+      "pgn": "twic1434.pgn",
+      "size_bytes": 4658310,
+      "games": 5207,
+      "status": "ok"
+    },
+    {
+      "issue": 1435,
+      "zip": "twic1435g.zip",
+      "pgn": "twic1435.pgn",
+      "size_bytes": 4807856,
+      "games": 5374,
+      "status": "ok"
+    },
+    {
+      "issue": 1436,
+      "zip": "twic1436g.zip",
+      "pgn": "twic1436.pgn",
+      "size_bytes": 4521490,
+      "games": 5087,
+      "status": "ok"
+    },
+    {
+      "issue": 1437,
+      "zip": "twic1437g.zip",
+      "pgn": "twic1437.pgn",
+      "size_bytes": 4745521,
+      "games": 5284,
+      "status": "ok"
+    },
+    {
+      "issue": 1438,
+      "zip": "twic1438g.zip",
+      "pgn": "twic1438.pgn",
+      "size_bytes": 5368987,
+      "games": 6060,
+      "status": "ok"
+    },
+    {
+      "issue": 1439,
+      "zip": "twic1439g.zip",
+      "pgn": "twic1439.pgn",
+      "size_bytes": 5656361,
+      "games": 6442,
+      "status": "ok"
+    },
+    {
+      "issue": 1440,
+      "zip": "twic1440g.zip",
+      "pgn": "twic1440.pgn",
+      "size_bytes": 4651162,
+      "games": 5230,
+      "status": "ok"
+    },
+    {
+      "issue": 1441,
+      "zip": "twic1441g.zip",
+      "pgn": "twic1441.pgn",
+      "size_bytes": 4478773,
+      "games": 5096,
+      "status": "ok"
+    },
+    {
+      "issue": 1442,
+      "zip": "twic1442g.zip",
+      "pgn": "twic1442.pgn",
+      "size_bytes": 5139230,
+      "games": 5984,
+      "status": "ok"
+    },
+    {
+      "issue": 1443,
+      "zip": "twic1443g.zip",
+      "pgn": "twic1443.pgn",
+      "size_bytes": 5674823,
+      "games": 6507,
+      "status": "ok"
+    },
+    {
+      "issue": 1444,
+      "zip": "twic1444g.zip",
+      "pgn": "twic1444.pgn",
+      "size_bytes": 6543041,
+      "games": 7486,
+      "status": "ok"
+    },
+    {
+      "issue": 1445,
+      "zip": "twic1445g.zip",
+      "pgn": "twic1445.pgn",
+      "size_bytes": 6501422,
+      "games": 7420,
+      "status": "ok"
+    },
+    {
+      "issue": 1446,
+      "zip": "twic1446g.zip",
+      "pgn": "twic1446.pgn",
+      "size_bytes": 6435725,
+      "games": 7339,
+      "status": "ok"
+    },
+    {
+      "issue": 1447,
+      "zip": "twic1447g.zip",
+      "pgn": "twic1447.pgn",
+      "size_bytes": 6745909,
+      "games": 7643,
+      "status": "ok"
+    },
+    {
+      "issue": 1448,
+      "zip": "twic1448g.zip",
+      "pgn": "twic1448.pgn",
+      "size_bytes": 8198052,
+      "games": 9061,
+      "status": "ok"
+    },
+    {
+      "issue": 1449,
+      "zip": "twic1449g.zip",
+      "pgn": "twic1449.pgn",
+      "size_bytes": 6142313,
+      "games": 6942,
+      "status": "ok"
+    },
+    {
+      "issue": 1450,
+      "zip": "twic1450g.zip",
+      "pgn": "twic1450.pgn",
+      "size_bytes": 5840019,
+      "games": 6336,
+      "status": "ok"
+    },
+    {
+      "issue": 1451,
+      "zip": "twic1451g.zip",
+      "pgn": "twic1451.pgn",
+      "size_bytes": 5667453,
+      "games": 6316,
+      "status": "ok"
+    },
+    {
+      "issue": 1452,
+      "zip": "twic1452g.zip",
+      "pgn": "twic1452.pgn",
+      "size_bytes": 4995785,
+      "games": 5682,
+      "status": "ok"
+    },
+    {
+      "issue": 1453,
+      "zip": "twic1453g.zip",
+      "status": "bad_zip"
+    },
+    {
+      "issue": 1454,
+      "zip": "twic1454g.zip",
+      "pgn": "twic1454.pgn",
+      "size_bytes": 5763946,
+      "games": 6415,
+      "status": "ok"
+    },
+    {
+      "issue": 1455,
+      "zip": "twic1455g.zip",
+      "pgn": "twic1455.pgn",
+      "size_bytes": 5146221,
+      "games": 5771,
+      "status": "ok"
+    },
+    {
+      "issue": 1456,
+      "zip": "twic1456g.zip",
+      "pgn": "twic1456.pgn",
+      "size_bytes": 4675317,
+      "games": 5310,
+      "status": "ok"
+    },
+    {
+      "issue": 1457,
+      "zip": "twic1457g.zip",
+      "pgn": "twic1457.pgn",
+      "size_bytes": 5327743,
+      "games": 5900,
+      "status": "ok"
+    },
+    {
+      "issue": 1458,
+      "zip": "twic1458g.zip",
+      "pgn": "twic1458.pgn",
+      "size_bytes": 6613418,
+      "games": 7504,
+      "status": "ok"
+    },
+    {
+      "issue": 1459,
+      "zip": "twic1459g.zip",
+      "pgn": "twic1459.pgn",
+      "size_bytes": 5997507,
+      "games": 6667,
+      "status": "ok"
+    },
+    {
+      "issue": 1460,
+      "zip": "twic1460g.zip",
+      "pgn": "twic1460.pgn",
+      "size_bytes": 5238691,
+      "games": 5903,
+      "status": "ok"
+    },
+    {
+      "issue": 1461,
+      "zip": "twic1461g.zip",
+      "pgn": "twic1461.pgn",
+      "size_bytes": 5441134,
+      "games": 6075,
+      "status": "ok"
+    },
+    {
+      "issue": 1462,
+      "zip": "twic1462g.zip",
+      "pgn": "twic1462.pgn",
+      "size_bytes": 7652281,
+      "games": 8542,
+      "status": "ok"
+    },
+    {
+      "issue": 1463,
+      "zip": "twic1463g.zip",
+      "pgn": "twic1463.pgn",
+      "size_bytes": 5027655,
+      "games": 5701,
+      "status": "ok"
+    },
+    {
+      "issue": 1464,
+      "zip": "twic1464g.zip",
+      "pgn": "twic1464.pgn",
+      "size_bytes": 4715225,
+      "games": 5286,
+      "status": "ok"
+    },
+    {
+      "issue": 1465,
+      "zip": "twic1465g.zip",
+      "pgn": "twic1465.pgn",
+      "size_bytes": 6799779,
+      "games": 7716,
+      "status": "ok"
+    },
+    {
+      "issue": 1466,
+      "zip": "twic1466g.zip",
+      "pgn": "twic1466.pgn",
+      "size_bytes": 4906447,
+      "games": 5546,
+      "status": "ok"
+    },
+    {
+      "issue": 1467,
+      "zip": "twic1467g.zip",
+      "pgn": "twic1467.pgn",
+      "size_bytes": 7856178,
+      "games": 8909,
+      "status": "ok"
+    },
+    {
+      "issue": 1468,
+      "zip": "twic1468g.zip",
+      "pgn": "twic1468.pgn",
+      "size_bytes": 6505536,
+      "games": 7201,
+      "status": "ok"
+    },
+    {
+      "issue": 1469,
+      "zip": "twic1469g.zip",
+      "pgn": "twic1469.pgn",
+      "size_bytes": 9538502,
+      "games": 10627,
+      "status": "ok"
+    },
+    {
+      "issue": 1470,
+      "zip": "twic1470g.zip",
+      "pgn": "twic1470.pgn",
+      "size_bytes": 6166218,
+      "games": 6784,
+      "status": "ok"
+    },
+    {
+      "issue": 1471,
+      "zip": "twic1471g.zip",
+      "pgn": "twic1471.pgn",
+      "size_bytes": 4904069,
+      "games": 5524,
+      "status": "ok"
+    },
+    {
+      "issue": 1472,
+      "zip": "twic1472g.zip",
+      "pgn": "twic1472.pgn",
+      "size_bytes": 4605869,
+      "games": 5206,
+      "status": "ok"
+    },
+    {
+      "issue": 1473,
+      "zip": "twic1473g.zip",
+      "pgn": "twic1473.pgn",
+      "size_bytes": 4617452,
+      "games": 5459,
+      "status": "ok"
+    },
+    {
+      "issue": 1474,
+      "zip": "twic1474g.zip",
+      "pgn": "twic1474.pgn",
+      "size_bytes": 8575952,
+      "games": 9848,
+      "status": "ok"
+    },
+    {
+      "issue": 1475,
+      "zip": "twic1475g.zip",
+      "pgn": "twic1475.pgn",
+      "size_bytes": 7371732,
+      "games": 8302,
+      "status": "ok"
+    },
+    {
+      "issue": 1476,
+      "zip": "twic1476g.zip",
+      "pgn": "twic1476.pgn",
+      "size_bytes": 5094270,
+      "games": 5744,
+      "status": "ok"
+    },
+    {
+      "issue": 1477,
+      "zip": "twic1477g.zip",
+      "pgn": "twic1477.pgn",
+      "size_bytes": 6262253,
+      "games": 7064,
+      "status": "ok"
+    },
+    {
+      "issue": 1478,
+      "zip": "twic1478g.zip",
+      "pgn": "twic1478.pgn",
+      "size_bytes": 5352534,
+      "games": 6031,
+      "status": "ok"
+    },
+    {
+      "issue": 1479,
+      "zip": "twic1479g.zip",
+      "pgn": "twic1479.pgn",
+      "size_bytes": 7013858,
+      "games": 8053,
+      "status": "ok"
+    },
+    {
+      "issue": 1480,
+      "zip": "twic1480g.zip",
+      "pgn": "twic1480.pgn",
+      "size_bytes": 4265423,
+      "games": 4829,
+      "status": "ok"
+    },
+    {
+      "issue": 1481,
+      "zip": "twic1481g.zip",
+      "pgn": "twic1481.pgn",
+      "size_bytes": 4995769,
+      "games": 5574,
+      "status": "ok"
+    },
+    {
+      "issue": 1482,
+      "zip": "twic1482g.zip",
+      "pgn": "twic1482.pgn",
+      "size_bytes": 5758532,
+      "games": 6550,
+      "status": "ok"
+    },
+    {
+      "issue": 1483,
+      "zip": "twic1483g.zip",
+      "pgn": "twic1483.pgn",
+      "size_bytes": 6782083,
+      "games": 7597,
+      "status": "ok"
+    },
+    {
+      "issue": 1484,
+      "zip": "twic1484g.zip",
+      "pgn": "twic1484.pgn",
+      "size_bytes": 5908208,
+      "games": 6698,
+      "status": "ok"
+    },
+    {
+      "issue": 1485,
+      "zip": "twic1485g.zip",
+      "pgn": "twic1485.pgn",
+      "size_bytes": 5099906,
+      "games": 5592,
+      "status": "ok"
+    },
+    {
+      "issue": 1486,
+      "zip": "twic1486g.zip",
+      "pgn": "twic1486.pgn",
+      "size_bytes": 5639388,
+      "games": 6257,
+      "status": "ok"
+    },
+    {
+      "issue": 1487,
+      "zip": "twic1487g.zip",
+      "pgn": "twic1487.pgn",
+      "size_bytes": 6794330,
+      "games": 7717,
+      "status": "ok"
+    },
+    {
+      "issue": 1488,
+      "zip": "twic1488g.zip",
+      "pgn": "twic1488.pgn",
+      "size_bytes": 5133431,
+      "games": 5781,
+      "status": "ok"
+    },
+    {
+      "issue": 1489,
+      "zip": "twic1489g.zip",
+      "pgn": "twic1489.pgn",
+      "size_bytes": 6074695,
+      "games": 6867,
+      "status": "ok"
+    },
+    {
+      "issue": 1490,
+      "zip": "twic1490g.zip",
+      "pgn": "twic1490.pgn",
+      "size_bytes": 5285400,
+      "games": 5969,
+      "status": "ok"
+    },
+    {
+      "issue": 1491,
+      "zip": "twic1491g.zip",
+      "pgn": "twic1491.pgn",
+      "size_bytes": 7709603,
+      "games": 8685,
+      "status": "ok"
+    },
+    {
+      "issue": 1492,
+      "zip": "twic1492g.zip",
+      "pgn": "twic1492.pgn",
+      "size_bytes": 6764781,
+      "games": 7599,
+      "status": "ok"
+    },
+    {
+      "issue": 1493,
+      "zip": "twic1493g.zip",
+      "pgn": "twic1493.pgn",
+      "size_bytes": 6674811,
+      "games": 7575,
+      "status": "ok"
+    },
+    {
+      "issue": 1494,
+      "zip": "twic1494g.zip",
+      "pgn": "twic1494.pgn",
+      "size_bytes": 5965079,
+      "games": 6778,
+      "status": "ok"
+    },
+    {
+      "issue": 1495,
+      "zip": "twic1495g.zip",
+      "pgn": "twic1495.pgn",
+      "size_bytes": 6058241,
+      "games": 6946,
+      "status": "ok"
+    },
+    {
+      "issue": 1496,
+      "zip": "twic1496g.zip",
+      "pgn": "twic1496.pgn",
+      "size_bytes": 6858055,
+      "games": 7802,
+      "status": "ok"
+    },
+    {
+      "issue": 1497,
+      "zip": "twic1497g.zip",
+      "pgn": "twic1497.pgn",
+      "size_bytes": 9617356,
+      "games": 10923,
+      "status": "ok"
+    },
+    {
+      "issue": 1498,
+      "zip": "twic1498g.zip",
+      "pgn": "twic1498.pgn",
+      "size_bytes": 9785645,
+      "games": 11012,
+      "status": "ok"
+    },
+    {
+      "issue": 1499,
+      "zip": "twic1499g.zip",
+      "pgn": "twic1499.pgn",
+      "size_bytes": 6839313,
+      "games": 7809,
+      "status": "ok"
+    },
+    {
+      "issue": 1500,
+      "zip": "twic1500g.zip",
+      "pgn": "twic1500.pgn",
+      "size_bytes": 7019092,
+      "games": 8005,
+      "status": "ok"
+    },
+    {
+      "issue": 1501,
+      "zip": "twic1501g.zip",
+      "pgn": "twic1501.pgn",
+      "size_bytes": 7432029,
+      "games": 8540,
+      "status": "ok"
+    },
+    {
+      "issue": 1502,
+      "zip": "twic1502g.zip",
+      "pgn": "twic1502.pgn",
+      "size_bytes": 9396696,
+      "games": 10519,
+      "status": "ok"
+    },
+    {
+      "issue": 1503,
+      "zip": "twic1503g.zip",
+      "pgn": "twic1503.pgn",
+      "size_bytes": 9447789,
+      "games": 10573,
+      "status": "ok"
+    },
+    {
+      "issue": 1504,
+      "zip": "twic1504g.zip",
+      "pgn": "twic1504.pgn",
+      "size_bytes": 6688335,
+      "games": 7579,
+      "status": "ok"
+    },
+    {
+      "issue": 1505,
+      "zip": "twic1505g.zip",
+      "pgn": "twic1505.pgn",
+      "size_bytes": 7728259,
+      "games": 8671,
+      "status": "ok"
+    },
+    {
+      "issue": 1506,
+      "zip": "twic1506g.zip",
+      "pgn": "twic1506.pgn",
+      "size_bytes": 6927299,
+      "games": 7743,
+      "status": "ok"
+    },
+    {
+      "issue": 1507,
+      "zip": "twic1507g.zip",
+      "pgn": "twic1507.pgn",
+      "size_bytes": 6507943,
+      "games": 7423,
+      "status": "ok"
+    },
+    {
+      "issue": 1508,
+      "zip": "twic1508g.zip",
+      "pgn": "twic1508.pgn",
+      "size_bytes": 6409201,
+      "games": 7108,
+      "status": "ok"
+    },
+    {
+      "issue": 1509,
+      "zip": "twic1509g.zip",
+      "pgn": "twic1509.pgn",
+      "size_bytes": 6329255,
+      "games": 7185,
+      "status": "ok"
+    },
+    {
+      "issue": 1510,
+      "zip": "twic1510g.zip",
+      "pgn": "twic1510.pgn",
+      "size_bytes": 7963317,
+      "games": 9069,
+      "status": "ok"
+    },
+    {
+      "issue": 1511,
+      "zip": "twic1511g.zip",
+      "pgn": "twic1511.pgn",
+      "size_bytes": 6932224,
+      "games": 7675,
+      "status": "ok"
+    },
+    {
+      "issue": 1512,
+      "zip": "twic1512g.zip",
+      "pgn": "twic1512.pgn",
+      "size_bytes": 6685995,
+      "games": 7555,
+      "status": "ok"
+    },
+    {
+      "issue": 1513,
+      "zip": "twic1513g.zip",
+      "pgn": "twic1513.pgn",
+      "size_bytes": 6462590,
+      "games": 7383,
+      "status": "ok"
+    },
+    {
+      "issue": 1514,
+      "zip": "twic1514g.zip",
+      "pgn": "twic1514.pgn",
+      "size_bytes": 6430595,
+      "games": 7320,
+      "status": "ok"
+    },
+    {
+      "issue": 1515,
+      "zip": "twic1515g.zip",
+      "pgn": "twic1515.pgn",
+      "size_bytes": 6978309,
+      "games": 7680,
+      "status": "ok"
+    },
+    {
+      "issue": 1516,
+      "zip": "twic1516g.zip",
+      "pgn": "twic1516.pgn",
+      "size_bytes": 6514500,
+      "games": 7136,
+      "status": "ok"
+    },
+    {
+      "issue": 1517,
+      "zip": "twic1517g.zip",
+      "pgn": "twic1517.pgn",
+      "size_bytes": 7012597,
+      "games": 7991,
+      "status": "ok"
+    },
+    {
+      "issue": 1518,
+      "zip": "twic1518g.zip",
+      "pgn": "twic1518.pgn",
+      "size_bytes": 7514814,
+      "games": 8586,
+      "status": "ok"
+    },
+    {
+      "issue": 1519,
+      "zip": "twic1519g.zip",
+      "pgn": "twic1519.pgn",
+      "size_bytes": 6235542,
+      "games": 7074,
+      "status": "ok"
+    },
+    {
+      "issue": 1520,
+      "zip": "twic1520g.zip",
+      "pgn": "twic1520.pgn",
+      "size_bytes": 6578976,
+      "games": 7386,
+      "status": "ok"
+    },
+    {
+      "issue": 1521,
+      "zip": "twic1521g.zip",
+      "pgn": "twic1521.pgn",
+      "size_bytes": 9793940,
+      "games": 10782,
+      "status": "ok"
+    },
+    {
+      "issue": 1522,
+      "zip": "twic1522g.zip",
+      "pgn": "twic1522.pgn",
+      "size_bytes": 7137633,
+      "games": 8152,
+      "status": "ok"
+    },
+    {
+      "issue": 1523,
+      "zip": "twic1523g.zip",
+      "pgn": "twic1523.pgn",
+      "size_bytes": 6560724,
+      "games": 7437,
+      "status": "ok"
+    },
+    {
+      "issue": 1524,
+      "zip": "twic1524g.zip",
+      "pgn": "twic1524.pgn",
+      "size_bytes": 5866473,
+      "games": 6627,
+      "status": "ok"
+    },
+    {
+      "issue": 1525,
+      "zip": "twic1525g.zip",
+      "pgn": "twic1525.pgn",
+      "size_bytes": 6985660,
+      "games": 7927,
+      "status": "ok"
+    },
+    {
+      "issue": 1526,
+      "zip": "twic1526g.zip",
+      "pgn": "twic1526.pgn",
+      "size_bytes": 8287414,
+      "games": 9271,
+      "status": "ok"
+    },
+    {
+      "issue": 1527,
+      "zip": "twic1527g.zip",
+      "pgn": "twic1527.pgn",
+      "size_bytes": 7243975,
+      "games": 8233,
+      "status": "ok"
+    },
+    {
+      "issue": 1528,
+      "zip": "twic1528g.zip",
+      "pgn": "twic1528.pgn",
+      "size_bytes": 6744782,
+      "games": 7708,
+      "status": "ok"
+    },
+    {
+      "issue": 1529,
+      "zip": "twic1529g.zip",
+      "pgn": "twic1529.pgn",
+      "size_bytes": 8604081,
+      "games": 9929,
+      "status": "ok"
+    },
+    {
+      "issue": 1530,
+      "zip": "twic1530g.zip",
+      "pgn": "twic1530.pgn",
+      "size_bytes": 7859498,
+      "games": 8786,
+      "status": "ok"
+    },
+    {
+      "issue": 1531,
+      "zip": "twic1531g.zip",
+      "pgn": "twic1531.pgn",
+      "size_bytes": 7208115,
+      "games": 8111,
+      "status": "ok"
+    },
+    {
+      "issue": 1532,
+      "zip": "twic1532g.zip",
+      "pgn": "twic1532.pgn",
+      "size_bytes": 4978719,
+      "games": 5625,
+      "status": "ok"
+    },
+    {
+      "issue": 1533,
+      "zip": "twic1533g.zip",
+      "pgn": "twic1533.pgn",
+      "size_bytes": 7528952,
+      "games": 8591,
+      "status": "ok"
+    },
+    {
+      "issue": 1534,
+      "zip": "twic1534g.zip",
+      "pgn": "twic1534.pgn",
+      "size_bytes": 7003881,
+      "games": 7971,
+      "status": "ok"
+    },
+    {
+      "issue": 1535,
+      "zip": "twic1535g.zip",
+      "pgn": "twic1535.pgn",
+      "size_bytes": 5910261,
+      "games": 6640,
+      "status": "ok"
+    },
+    {
+      "issue": 1536,
+      "zip": "twic1536g.zip",
+      "pgn": "twic1536.pgn",
+      "size_bytes": 5583309,
+      "games": 6345,
+      "status": "ok"
+    },
+    {
+      "issue": 1537,
+      "zip": "twic1537g.zip",
+      "pgn": "twic1537.pgn",
+      "size_bytes": 5765594,
+      "games": 6430,
+      "status": "ok"
+    },
+    {
+      "issue": 1538,
+      "zip": "twic1538g.zip",
+      "pgn": "twic1538.pgn",
+      "size_bytes": 7180318,
+      "games": 8055,
+      "status": "ok"
+    },
+    {
+      "issue": 1539,
+      "zip": "twic1539g.zip",
+      "pgn": "twic1539.pgn",
+      "size_bytes": 6987082,
+      "games": 7731,
+      "status": "ok"
+    },
+    {
+      "issue": 1540,
+      "zip": "twic1540g.zip",
+      "pgn": "twic1540.pgn",
+      "size_bytes": 7561911,
+      "games": 8334,
+      "status": "ok"
+    },
+    {
+      "issue": 1541,
+      "zip": "twic1541g.zip",
+      "pgn": "twic1541.pgn",
+      "size_bytes": 7237004,
+      "games": 8033,
+      "status": "ok"
+    },
+    {
+      "issue": 1542,
+      "zip": "twic1542g.zip",
+      "pgn": "twic1542.pgn",
+      "size_bytes": 6681325,
+      "games": 7493,
+      "status": "ok"
+    },
+    {
+      "issue": 1543,
+      "zip": "twic1543g.zip",
+      "pgn": "twic1543.pgn",
+      "size_bytes": 11363348,
+      "games": 12685,
+      "status": "ok"
+    },
+    {
+      "issue": 1544,
+      "zip": "twic1544g.zip",
+      "pgn": "twic1544.pgn",
+      "size_bytes": 6603273,
+      "games": 7407,
+      "status": "ok"
+    },
+    {
+      "issue": 1545,
+      "zip": "twic1545g.zip",
+      "pgn": "twic1545.pgn",
+      "size_bytes": 8190323,
+      "games": 9236,
+      "status": "ok"
+    },
+    {
+      "issue": 1546,
+      "zip": "twic1546g.zip",
+      "pgn": "twic1546.pgn",
+      "size_bytes": 8551082,
+      "games": 9700,
+      "status": "ok"
+    },
+    {
+      "issue": 1547,
+      "zip": "twic1547g.zip",
+      "pgn": "twic1547.pgn",
+      "size_bytes": 7987035,
+      "games": 9039,
+      "status": "ok"
+    },
+    {
+      "issue": 1548,
+      "zip": "twic1548g.zip",
+      "pgn": "twic1548.pgn",
+      "size_bytes": 7799667,
+      "games": 8849,
+      "status": "ok"
+    },
+    {
+      "issue": 1549,
+      "zip": "twic1549g.zip",
+      "pgn": "twic1549.pgn",
+      "size_bytes": 9887474,
+      "games": 11277,
+      "status": "ok"
+    },
+    {
+      "issue": 1550,
+      "zip": "twic1550g.zip",
+      "pgn": "twic1550.pgn",
+      "size_bytes": 11058695,
+      "games": 12486,
+      "status": "ok"
+    },
+    {
+      "issue": 1551,
+      "zip": "twic1551g.zip",
+      "pgn": "twic1551.pgn",
+      "size_bytes": 9384727,
+      "games": 10595,
+      "status": "ok"
+    },
+    {
+      "issue": 1552,
+      "zip": "twic1552g.zip",
+      "pgn": "twic1552.pgn",
+      "size_bytes": 9596054,
+      "games": 10582,
+      "status": "ok"
+    },
+    {
+      "issue": 1553,
+      "zip": "twic1553g.zip",
+      "pgn": "twic1553.pgn",
+      "size_bytes": 9612448,
+      "games": 10991,
+      "status": "ok"
+    },
+    {
+      "issue": 1554,
+      "zip": "twic1554g.zip",
+      "pgn": "twic1554.pgn",
+      "size_bytes": 10858515,
+      "games": 12425,
+      "status": "ok"
+    },
+    {
+      "issue": 1555,
+      "zip": "twic1555g.zip",
+      "pgn": "twic1555.pgn",
+      "size_bytes": 10159209,
+      "games": 11423,
+      "status": "ok"
+    },
+    {
+      "issue": 1556,
+      "zip": "twic1556g.zip",
+      "pgn": "twic1556.pgn",
+      "size_bytes": 9045789,
+      "games": 10170,
+      "status": "ok"
+    },
+    {
+      "issue": 1557,
+      "zip": "twic1557g.zip",
+      "pgn": "twic1557.pgn",
+      "size_bytes": 7486679,
+      "games": 8563,
+      "status": "ok"
+    },
+    {
+      "issue": 1558,
+      "zip": "twic1558g.zip",
+      "pgn": "twic1558.pgn",
+      "size_bytes": 9145556,
+      "games": 10135,
+      "status": "ok"
+    },
+    {
+      "issue": 1559,
+      "zip": "twic1559g.zip",
+      "pgn": "twic1559.pgn",
+      "size_bytes": 9209618,
+      "games": 10157,
+      "status": "ok"
+    },
+    {
+      "issue": 1560,
+      "zip": "twic1560g.zip",
+      "pgn": "twic1560.pgn",
+      "size_bytes": 7074191,
+      "games": 7772,
+      "status": "ok"
+    },
+    {
+      "issue": 1561,
+      "zip": "twic1561g.zip",
+      "pgn": "twic1561.pgn",
+      "size_bytes": 7155746,
+      "games": 7957,
+      "status": "ok"
+    },
+    {
+      "issue": 1562,
+      "zip": "twic1562g.zip",
+      "pgn": "twic1562.pgn",
+      "size_bytes": 7959701,
+      "games": 9044,
+      "status": "ok"
+    },
+    {
+      "issue": 1563,
+      "zip": "twic1563g.zip",
+      "pgn": "twic1563.pgn",
+      "size_bytes": 8605321,
+      "games": 9397,
+      "status": "ok"
+    },
+    {
+      "issue": 1564,
+      "zip": "twic1564g.zip",
+      "pgn": "twic1564.pgn",
+      "size_bytes": 7644621,
+      "games": 8487,
+      "status": "ok"
+    },
+    {
+      "issue": 1565,
+      "zip": "twic1565g.zip",
+      "pgn": "twic1565.pgn",
+      "size_bytes": 7431512,
+      "games": 8439,
+      "status": "ok"
+    },
+    {
+      "issue": 1566,
+      "zip": "twic1566g.zip",
+      "pgn": "twic1566.pgn",
+      "size_bytes": 7210367,
+      "games": 8185,
+      "status": "ok"
+    },
+    {
+      "issue": 1567,
+      "zip": "twic1567g.zip",
+      "pgn": "twic1567.pgn",
+      "size_bytes": 7325705,
+      "games": 8172,
+      "status": "ok"
+    },
+    {
+      "issue": 1568,
+      "zip": "twic1568g.zip",
+      "pgn": "twic1568.pgn",
+      "size_bytes": 6351372,
+      "games": 7163,
+      "status": "ok"
+    },
+    {
+      "issue": 1569,
+      "zip": "twic1569g.zip",
+      "pgn": "twic1569.pgn",
+      "size_bytes": 8875722,
+      "games": 9982,
+      "status": "ok"
+    },
+    {
+      "issue": 1570,
+      "zip": "twic1570g.zip",
+      "pgn": "twic1570.pgn",
+      "size_bytes": 8933736,
+      "games": 10046,
+      "status": "ok"
+    },
+    {
+      "issue": 1571,
+      "zip": "twic1571g.zip",
+      "pgn": "twic1571.pgn",
+      "size_bytes": 6894659,
+      "games": 7853,
+      "status": "ok"
+    },
+    {
+      "issue": 1572,
+      "zip": "twic1572g.zip",
+      "pgn": "twic1572.pgn",
+      "size_bytes": 8867574,
+      "games": 10167,
+      "status": "ok"
+    },
+    {
+      "issue": 1573,
+      "zip": "twic1573g.zip",
+      "pgn": "twic1573.pgn",
+      "size_bytes": 8437687,
+      "games": 9405,
+      "status": "ok"
+    },
+    {
+      "issue": 1574,
+      "zip": "twic1574g.zip",
+      "pgn": "twic1574.pgn",
+      "size_bytes": 8943538,
+      "games": 9807,
+      "status": "ok"
+    },
+    {
+      "issue": 1575,
+      "zip": "twic1575g.zip",
+      "pgn": "twic1575.pgn",
+      "size_bytes": 7553686,
+      "games": 8553,
+      "status": "ok"
+    },
+    {
+      "issue": 1576,
+      "zip": "twic1576g.zip",
+      "pgn": "twic1576.pgn",
+      "size_bytes": 7079043,
+      "games": 7983,
+      "status": "ok"
+    },
+    {
+      "issue": 1577,
+      "zip": "twic1577g.zip",
+      "pgn": "twic1577.pgn",
+      "size_bytes": 8067877,
+      "games": 9163,
+      "status": "ok"
+    },
+    {
+      "issue": 1578,
+      "zip": "twic1578g.zip",
+      "pgn": "twic1578.pgn",
+      "size_bytes": 6835935,
+      "games": 7719,
+      "status": "ok"
+    },
+    {
+      "issue": 1579,
+      "zip": "twic1579g.zip",
+      "pgn": "twic1579.pgn",
+      "size_bytes": 7616266,
+      "games": 8602,
+      "status": "ok"
+    },
+    {
+      "issue": 1580,
+      "zip": "twic1580g.zip",
+      "pgn": "twic1580.pgn",
+      "size_bytes": 7707454,
+      "games": 8609,
+      "status": "ok"
+    },
+    {
+      "issue": 1581,
+      "zip": "twic1581g.zip",
+      "pgn": "twic1581.pgn",
+      "size_bytes": 7656041,
+      "games": 8651,
+      "status": "ok"
+    },
+    {
+      "issue": 1582,
+      "zip": "twic1582g.zip",
+      "pgn": "twic1582.pgn",
+      "size_bytes": 7809829,
+      "games": 8728,
+      "status": "ok"
+    },
+    {
+      "issue": 1583,
+      "zip": "twic1583g.zip",
+      "pgn": "twic1583.pgn",
+      "size_bytes": 6435654,
+      "games": 7213,
+      "status": "ok"
+    },
+    {
+      "issue": 1584,
+      "zip": "twic1584g.zip",
+      "pgn": "twic1584.pgn",
+      "size_bytes": 5503225,
+      "games": 6078,
+      "status": "ok"
+    },
+    {
+      "issue": 1585,
+      "zip": "twic1585g.zip",
+      "pgn": "twic1585.pgn",
+      "size_bytes": 6260199,
+      "games": 7030,
+      "status": "ok"
+    },
+    {
+      "issue": 1586,
+      "zip": "twic1586g.zip",
+      "pgn": "twic1586.pgn",
+      "size_bytes": 6109795,
+      "games": 6872,
+      "status": "ok"
+    },
+    {
+      "issue": 1587,
+      "zip": "twic1587g.zip",
+      "pgn": "twic1587.pgn",
+      "size_bytes": 5487233,
+      "games": 6155,
+      "status": "ok"
+    },
+    {
+      "issue": 1588,
+      "zip": "twic1588g.zip",
+      "pgn": "twic1588.pgn",
+      "size_bytes": 6210616,
+      "games": 7010,
+      "status": "ok"
+    },
+    {
+      "issue": 1589,
+      "zip": "twic1589g.zip",
+      "pgn": "twic1589.pgn",
+      "size_bytes": 8889333,
+      "games": 10235,
+      "status": "ok"
+    },
+    {
+      "issue": 1590,
+      "zip": "twic1590g.zip",
+      "pgn": "twic1590.pgn",
+      "size_bytes": 5757428,
+      "games": 6431,
+      "status": "ok"
+    },
+    {
+      "issue": 1591,
+      "zip": "twic1591g.zip",
+      "pgn": "twic1591.pgn",
+      "size_bytes": 6762386,
+      "games": 7553,
+      "status": "ok"
+    },
+    {
+      "issue": 1592,
+      "zip": "twic1592g.zip",
+      "pgn": "twic1592.pgn",
+      "size_bytes": 6362816,
+      "games": 7114,
+      "status": "ok"
+    },
+    {
+      "issue": 1593,
+      "zip": "twic1593g.zip",
+      "pgn": "twic1593.pgn",
+      "size_bytes": 6027195,
+      "games": 6678,
+      "status": "ok"
+    },
+    {
+      "issue": 1594,
+      "zip": "twic1594g.zip",
+      "pgn": "twic1594.pgn",
+      "size_bytes": 6827568,
+      "games": 7669,
+      "status": "ok"
+    },
+    {
+      "issue": 1595,
+      "zip": "twic1595g.zip",
+      "status": "bad_zip"
+    },
+    {
+      "issue": 1596,
+      "zip": "twic1596g.zip",
+      "pgn": "twic1596.pgn",
+      "size_bytes": 5482883,
+      "games": 5961,
+      "status": "ok"
+    },
+    {
+      "issue": 1597,
+      "zip": "twic1597g.zip",
+      "pgn": "twic1597.pgn",
+      "size_bytes": 10393612,
+      "games": 11224,
+      "status": "ok"
+    },
+    {
+      "issue": 1598,
+      "zip": "twic1598g.zip",
+      "pgn": "twic1598.pgn",
+      "size_bytes": 7191654,
+      "games": 8080,
+      "status": "ok"
+    },
+    {
+      "issue": 1599,
+      "zip": "twic1599g.zip",
+      "pgn": "twic1599.pgn",
+      "size_bytes": 6543054,
+      "games": 7300,
+      "status": "ok"
+    },
+    {
+      "issue": 1600,
+      "zip": "twic1600g.zip",
+      "pgn": "twic1600.pgn",
+      "size_bytes": 7899377,
+      "games": 8891,
+      "status": "ok"
+    },
+    {
+      "issue": 1601,
+      "zip": "twic1601g.zip",
+      "pgn": "twic1601.pgn",
+      "size_bytes": 7540451,
+      "games": 8513,
+      "status": "ok"
+    },
+    {
+      "issue": 1602,
+      "zip": "twic1602g.zip",
+      "pgn": "twic1602.pgn",
+      "size_bytes": 7865048,
+      "games": 8826,
+      "status": "ok"
+    },
+    {
+      "issue": 1603,
+      "zip": "twic1603g.zip",
+      "pgn": "twic1603.pgn",
+      "size_bytes": 7435070,
+      "games": 8435,
+      "status": "ok"
+    },
+    {
+      "issue": 1604,
+      "zip": "twic1604g.zip",
+      "pgn": "twic1604.pgn",
+      "size_bytes": 7668592,
+      "games": 8662,
+      "status": "ok"
+    },
+    {
+      "issue": 1605,
+      "zip": "twic1605g.zip",
+      "pgn": "twic1605.pgn",
+      "size_bytes": 7635130,
+      "games": 8544,
+      "status": "ok"
+    },
+    {
+      "issue": 1606,
+      "zip": "twic1606g.zip",
+      "pgn": "twic1606.pgn",
+      "size_bytes": 6980761,
+      "games": 7849,
+      "status": "ok"
+    },
+    {
+      "issue": 1607,
+      "zip": "twic1607g.zip",
+      "pgn": "twic1607.pgn",
+      "size_bytes": 9504744,
+      "games": 10597,
+      "status": "ok"
+    },
+    {
+      "issue": 1608,
+      "zip": "twic1608g.zip",
+      "pgn": "twic1608.pgn",
+      "size_bytes": 5764264,
+      "games": 6245,
+      "status": "ok"
+    },
+    {
+      "issue": 1609,
+      "zip": "twic1609g.zip",
+      "pgn": "twic1609.pgn",
+      "size_bytes": 4862364,
+      "games": 5179,
+      "status": "ok"
+    },
+    {
+      "issue": 1610,
+      "zip": "twic1610g.zip",
+      "pgn": "twic1610.pgn",
+      "size_bytes": 4250080,
+      "games": 4643,
+      "status": "ok"
+    },
+    {
+      "issue": 1611,
+      "zip": "twic1611g.zip",
+      "pgn": "twic1611.pgn",
+      "size_bytes": 4387073,
+      "games": 4875,
+      "status": "ok"
+    },
+    {
+      "issue": 1612,
+      "zip": "twic1612g.zip",
+      "pgn": "twic1612.pgn",
+      "size_bytes": 5799929,
+      "games": 6314,
+      "status": "ok"
+    },
+    {
+      "issue": 1614,
+      "zip": "twic1614g.zip",
+      "pgn": "twic1614.pgn",
+      "size_bytes": 5411172,
+      "games": 5994,
+      "status": "ok"
+    },
+    {
+      "issue": 1615,
+      "zip": "twic1615g.zip",
+      "pgn": "twic1615.pgn",
+      "size_bytes": 6045598,
+      "games": 6590,
+      "status": "ok"
+    },
+    {
+      "issue": 1616,
+      "zip": "twic1616g.zip",
+      "pgn": "twic1616.pgn",
+      "size_bytes": 5532878,
+      "games": 6251,
+      "status": "ok"
+    },
+    {
+      "issue": 1617,
+      "zip": "twic1617g.zip",
+      "pgn": "twic1617.pgn",
+      "size_bytes": 4058552,
+      "games": 4565,
+      "status": "ok"
+    },
+    {
+      "issue": 1618,
+      "zip": "twic1618g.zip",
+      "pgn": "twic1618.pgn",
+      "size_bytes": 4832343,
+      "games": 5347,
+      "status": "ok"
+    },
+    {
+      "issue": 1619,
+      "zip": "twic1619g.zip",
+      "pgn": "twic1619.pgn",
+      "size_bytes": 5411284,
+      "games": 5937,
+      "status": "ok"
+    },
+    {
+      "issue": 1620,
+      "zip": "twic1620g.zip",
+      "pgn": "twic1620.pgn",
+      "size_bytes": 6236376,
+      "games": 6701,
+      "status": "ok"
+    },
+    {
+      "issue": 1621,
+      "zip": "twic1621g.zip",
+      "pgn": "twic1621.pgn",
+      "size_bytes": 7565444,
+      "games": 8315,
+      "status": "ok"
+    },
+    {
+      "issue": 1622,
+      "zip": "twic1622g.zip",
+      "pgn": "twic1622.pgn",
+      "size_bytes": 5846121,
+      "games": 6344,
+      "status": "ok"
+    },
+    {
+      "issue": 1623,
+      "zip": "twic1623g.zip",
+      "pgn": "twic1623.pgn",
+      "size_bytes": 6033156,
+      "games": 6628,
+      "status": "ok"
+    },
+    {
+      "issue": 1624,
+      "zip": "twic1624g.zip",
+      "pgn": "twic1624.pgn",
+      "size_bytes": 6627764,
+      "games": 7360,
+      "status": "ok"
+    },
+    {
+      "issue": 1625,
+      "zip": "twic1625g.zip",
+      "pgn": "twic1625.pgn",
+      "size_bytes": 7784223,
+      "games": 8400,
+      "status": "ok"
+    },
+    {
+      "issue": 1626,
+      "zip": "twic1626g.zip",
+      "pgn": "twic1626.pgn",
+      "size_bytes": 7598402,
+      "games": 8412,
+      "status": "ok"
+    },
+    {
+      "issue": 1627,
+      "zip": "twic1627g.zip",
+      "pgn": "twic1627.pgn",
+      "size_bytes": 6449265,
+      "games": 6996,
+      "status": "ok"
+    },
+    {
+      "issue": 1628,
+      "zip": "twic1628g.zip",
+      "pgn": "twic1628.pgn",
+      "size_bytes": 5503435,
+      "games": 6014,
+      "status": "ok"
+    },
+    {
+      "issue": 1629,
+      "zip": "twic1629g.zip",
+      "pgn": "twic1629.pgn",
+      "size_bytes": 5506445,
+      "games": 6060,
+      "status": "ok"
+    },
+    {
+      "issue": 1630,
+      "zip": "twic1630g.zip",
+      "pgn": "twic1630.pgn",
+      "size_bytes": 6399841,
+      "games": 7091,
+      "status": "ok"
+    },
+    {
+      "issue": 1631,
+      "zip": "twic1631g.zip",
+      "pgn": "twic1631.pgn",
+      "size_bytes": 5847826,
+      "games": 6370,
+      "status": "ok"
+    },
+    {
+      "issue": 1632,
+      "zip": "twic1632g.zip",
+      "pgn": "twic1632.pgn",
+      "size_bytes": 4934544,
+      "games": 5350,
+      "status": "ok"
+    },
+    {
+      "issue": 1633,
+      "zip": "twic1633g.zip",
+      "pgn": "twic1633.pgn",
+      "size_bytes": 5725138,
+      "games": 6302,
+      "status": "ok"
+    },
+    {
+      "issue": 1634,
+      "zip": "twic1634g.zip",
+      "pgn": "twic1634.pgn",
+      "size_bytes": 5985704,
+      "games": 6475,
+      "status": "ok"
+    },
+    {
+      "issue": 1635,
+      "zip": "twic1635g.zip",
+      "pgn": "twic1635.pgn",
+      "size_bytes": 5773095,
+      "games": 6236,
+      "status": "ok"
+    },
+    {
+      "issue": 1636,
+      "zip": "twic1636g.zip",
+      "pgn": "twic1636.pgn",
+      "size_bytes": 5604740,
+      "games": 6136,
+      "status": "ok"
+    },
+    {
+      "issue": 1637,
+      "zip": "twic1637g.zip",
+      "pgn": "twic1637.pgn",
+      "size_bytes": 5694516,
+      "games": 6195,
+      "status": "ok"
+    }
+  ]
+}
