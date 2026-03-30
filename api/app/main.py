@@ -185,6 +185,41 @@ def game_get(game_id: str):
     }
 
 
+@app.post("/api/games/{game_id}/analyze")
+def analyze_game(game_id: str, depth: int = Query(default=12, ge=6, le=40)):
+    task = celery_app.send_task("worker.analyze_game_lc0", args=[game_id, depth])
+    return {"queued": True, "task_id": task.id, "game_id": game_id, "engine": "lc0", "depth": depth}
+
+
+@app.get("/api/games/{game_id}/evaluations")
+def game_evaluations(game_id: str, engine: str = "lc0", limit: int = Query(default=200, le=5000), offset: int = 0):
+    with get_conn() as conn, conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT ply_index, fen, move_uci, depth, score_cp, score_mate, pv, analyzed_at
+            FROM move_evaluations
+            WHERE game_id=%s AND engine_name=%s
+            ORDER BY ply_index ASC
+            LIMIT %s OFFSET %s
+            """,
+            (game_id, engine, limit, offset),
+        )
+        rows = cur.fetchall()
+    return {
+        "count": len(rows),
+        "game_id": game_id,
+        "engine": engine,
+        "items": [
+            {
+                "ply": r[0], "fen": r[1], "move_uci": r[2], "depth": r[3],
+                "score_cp": r[4], "score_mate": r[5], "pv": r[6],
+                "analyzed_at": r[7].isoformat() if r[7] else None,
+            }
+            for r in rows
+        ],
+    }
+
+
 @app.get("/api/positions/tree")
 def position_tree(fen: str, limit: int = Query(default=40, le=200)):
     with get_conn() as conn, conn.cursor() as cur:

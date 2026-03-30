@@ -21,6 +21,8 @@ API:
 - `POST /api/twic/sync`
 - `GET /api/games/search`
 - `GET /api/games/{id}`
+- `POST /api/games/{id}/analyze?depth=12`
+- `GET /api/games/{id}/evaluations`
 - `GET /api/positions/tree?fen=...`
 
 ## Notes
