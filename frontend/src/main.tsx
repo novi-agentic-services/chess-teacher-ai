@@ -29,6 +29,8 @@ type PlayerProfile = {
   rating_chart: { month: string; avg_elo: number; samples: number }[];
 };
 
+type OpenPage = 'home' | 'analysis' | 'profile';
+
 const API_BASE = 'http://127.0.0.1:8000';
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
   const [searching, setSearching] = React.useState(false);
   const [profile, setProfile] = React.useState<PlayerProfile | null>(null);
   const [loadingProfile, setLoadingProfile] = React.useState(false);
+  const [activePage, setActivePage] = React.useState<OpenPage>('home');
+  const openPages: OpenPage[] = ['home', 'analysis', 'profile'];
 
   const searchGames = async (q: string) => {
     setSearching(true);
@@ -66,6 +70,7 @@ function App() {
     setChess(fresh);
     setMoves(hist);
     setIdx(0);
+    setActivePage('analysis');
   };
 
   const applyTo = (target: number) => {
@@ -75,15 +80,11 @@ function App() {
     setIdx(target);
   };
 
-  const playToEnd = () => {
-    applyTo(moves.length);
-  };
+  const playToEnd = () => applyTo(moves.length);
 
   const slowPlayToEnd = async () => {
     for (let t = idx + 1; t <= moves.length; t++) {
       applyTo(t);
-      // 5 moves every 2s => 400ms per move
-      // eslint-disable-next-line no-await-in-loop
       await new Promise((r) => setTimeout(r, 400));
     }
   };
@@ -100,6 +101,7 @@ function App() {
       const res = await fetch(`${API_BASE}/api/players/profile?name=${encodeURIComponent(query)}`);
       const data = await res.json();
       setProfile(data);
+      setActivePage('profile');
     } finally {
       setLoadingProfile(false);
     }
@@ -118,61 +120,82 @@ function App() {
   }, [chess]);
 
   return (
-    <div className="app">
-      <aside className="panel">
-        <h3>Game Search</h3>
-        <div className="search-row">
-          <input data-testid="player-search" value={query} onChange={(e) => setQuery(e.target.value)} />
-          <button data-testid="search-btn" onClick={() => searchGames(query)} disabled={searching}>{searching ? 'Searching…' : 'Search'}</button>
-          <button data-testid="profile-btn" onClick={loadProfile} disabled={loadingProfile}>{loadingProfile ? 'Loading…' : 'Profile'}</button>
-        </div>
-        <div style={{ marginTop: 12 }}>
-          {games.map((g) => (
-            <div key={g.id} className="game-card">
-              <div className="game-title">{g.white} vs {g.black}</div>
-              <div className="game-meta">{g.event} • {g.date} • {g.result}</div>
-              <button data-testid={`load-${g.id}`} onClick={() => loadGame(g.id)}>Load</button>
-            </div>
-          ))}
-          {!games.length && <div className="empty">No games loaded yet.</div>}
-        </div>
-      </aside>
+    <div className="workspace">
+      <div className="topbar">Chess Teacher AI • Multi-page workspace</div>
 
-      <main className="panel">
-        <h2>Board + Notation</h2>
-        <div className="board-wrap">
-          <Chessboard id="main-board" position={chess.fen()} arePiecesDraggable={false} />
+      {activePage === 'home' && (
+        <div className="panel home-panel" data-testid="home-page">
+          <h2>Home</h2>
+          <p>Welcome. Use the bottom tabs to switch pages.</p>
+          <p>Open pages: <b>Home</b>, <b>Analysis</b>, <b>Player Profile</b>.</p>
         </div>
-        <div className="controls">
-          <button data-testid="prev-move" onClick={() => applyTo(Math.max(0, idx - 1))}>Prev</button>
-          <button data-testid="next-move" onClick={() => applyTo(Math.min(moves.length, idx + 1))}>Next</button>
-          <button data-testid="play-to-end" onClick={playToEnd}>Play to End</button>
-          <button data-testid="slow-play" onClick={slowPlayToEnd}>Slow Play (5/2s)</button>
-          <span data-testid="move-progress" className="progress">Move {idx}/{moves.length}</span>
-        </div>
-        {selected && <p data-testid="loaded-game-id" className="loaded">Loaded: {selected.id}</p>}
-      </main>
+      )}
 
-      <aside className="panel">
-        <h3>Opening Tree</h3>
-        {tree.map((m) => (
-          <div key={m.move_uci} className="tree-row" onClick={() => applyTreeMove(m.move_uci)} title="Click to play this move">
-            <div className="tree-top">
-              <span><b>{m.move_uci}</b></span>
-              <span>{m.games} games</span>
+      {activePage === 'analysis' && (
+        <div className="app" data-testid="analysis-page">
+          <aside className="panel">
+            <h3>Game Search</h3>
+            <div className="search-row">
+              <input data-testid="player-search" value={query} onChange={(e) => setQuery(e.target.value)} />
+              <button data-testid="search-btn" onClick={() => searchGames(query)} disabled={searching}>{searching ? 'Searching…' : 'Search'}</button>
+              <button data-testid="profile-btn" onClick={loadProfile} disabled={loadingProfile}>{loadingProfile ? 'Loading…' : 'Profile'}</button>
             </div>
-            <div style={{ fontSize: 12, color: '#a9b8e4' }}>W {m.white_win_pct}% / D {m.draw_pct}% / B {m.black_win_pct}%</div>
-            <div className="bars">
-              <div className="bar w" style={{ width: `${m.white_win_pct}%` }} />
-              <div className="bar d" style={{ width: `${m.draw_pct}%` }} />
-              <div className="bar b" style={{ width: `${m.black_win_pct}%` }} />
+            <div style={{ marginTop: 12 }}>
+              {games.map((g) => (
+                <div key={g.id} className="game-card">
+                  <div className="game-title">{g.white} vs {g.black}</div>
+                  <div className="game-meta">{g.event} • {g.date} • {g.result}</div>
+                  <button data-testid={`load-${g.id}`} onClick={() => loadGame(g.id)}>Load</button>
+                </div>
+              ))}
+              {!games.length && <div className="empty">No games loaded yet.</div>}
             </div>
+          </aside>
+
+          <main className="panel">
+            <h2>Board + Notation</h2>
+            <div className="board-wrap">
+              <Chessboard id="main-board" position={chess.fen()} arePiecesDraggable={false} />
+            </div>
+            <div className="controls">
+              <button data-testid="prev-move" onClick={() => applyTo(Math.max(0, idx - 1))}>Prev</button>
+              <button data-testid="next-move" onClick={() => applyTo(Math.min(moves.length, idx + 1))}>Next</button>
+              <button data-testid="play-to-end" onClick={playToEnd}>Play to End</button>
+              <button data-testid="slow-play" onClick={slowPlayToEnd}>Slow Play (5/2s)</button>
+              <span data-testid="move-progress" className="progress">Move {idx}/{moves.length}</span>
+            </div>
+            {selected && <p data-testid="loaded-game-id" className="loaded">Loaded: {selected.id}</p>}
+          </main>
+
+          <aside className="panel">
+            <h3>Opening Tree</h3>
+            {tree.map((m) => (
+              <div key={m.move_uci} className="tree-row" onClick={() => applyTreeMove(m.move_uci)} title="Click to play this move">
+                <div className="tree-top">
+                  <span><b>{m.move_uci}</b></span>
+                  <span>{m.games} games</span>
+                </div>
+                <div style={{ fontSize: 12, color: '#a9b8e4' }}>W {m.white_win_pct}% / D {m.draw_pct}% / B {m.black_win_pct}%</div>
+                <div className="bars">
+                  <div className="bar w" style={{ width: `${m.white_win_pct}%` }} />
+                  <div className="bar d" style={{ width: `${m.draw_pct}%` }} />
+                  <div className="bar b" style={{ width: `${m.black_win_pct}%` }} />
+                </div>
+              </div>
+            ))}
+            {!tree.length && <div className="empty">No known continuations from this position.</div>}
+          </aside>
+        </div>
+      )}
+
+      {activePage === 'profile' && (
+        <div className="panel profile-page" data-testid="profile-page">
+          <h2>Player Profile</h2>
+          <div className="search-row" style={{ marginBottom: 12 }}>
+            <input data-testid="player-search" value={query} onChange={(e) => setQuery(e.target.value)} />
+            <button data-testid="profile-btn" onClick={loadProfile} disabled={loadingProfile}>{loadingProfile ? 'Loading…' : 'Load Profile'}</button>
           </div>
-        ))}
-        {!tree.length && <div className="empty">No known continuations from this position.</div>}
 
-        <div style={{ marginTop: 14 }}>
-          <h3 style={{ marginBottom: 8 }}>Player Profile</h3>
           {!profile && <div data-testid="profile-empty" className="empty">Load a player profile to view score split, openings, rating trend and player info.</div>}
           {profile && (
             <div data-testid="profile-panel">
@@ -197,7 +220,7 @@ function App() {
 
               <div data-testid="profile-rating-chart" style={{ marginTop: 10 }}>
                 <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 6 }}>Rating Chart (avg by month)</div>
-                <div style={{ maxHeight: 120, overflow: 'auto' }}>
+                <div style={{ maxHeight: 180, overflow: 'auto' }}>
                   {profile.rating_chart.slice(-24).map((r) => (
                     <div key={r.month} style={{ display: 'grid', gridTemplateColumns: '80px 1fr 48px', gap: 6, alignItems: 'center', marginBottom: 3 }}>
                       <div style={{ fontSize: 11, color: '#a9b8e4' }}>{r.month.slice(0, 7)}</div>
@@ -212,7 +235,20 @@ function App() {
             </div>
           )}
         </div>
-      </aside>
+      )}
+
+      <div className="tabbar" data-testid="open-pages-tabs">
+        {openPages.map((p) => (
+          <button
+            key={p}
+            data-testid={`tab-${p}`}
+            className={`tab-btn ${activePage === p ? 'active' : ''}`}
+            onClick={() => setActivePage(p)}
+          >
+            {p === 'home' ? 'Home' : p === 'analysis' ? 'Analysis' : 'Player Profile'}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

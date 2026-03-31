@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('player profile renders and video duration exceeds 10s', async ({ page }) => {
   await page.goto('/');
+  await page.getByTestId('tab-analysis').click();
 
   await page.getByTestId('player-search').fill('Roberto de Abreu');
   await page.getByTestId('profile-btn').click();

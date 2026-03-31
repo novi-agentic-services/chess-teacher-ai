@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 
 async function runSingleGame(page: any, gameIndex: number) {
   await page.goto('/');
+  await page.getByTestId('tab-analysis').click();
 
   await page.getByTestId('player-search').fill('Roberto de Abreu');
   await page.getByTestId('search-btn').click();
