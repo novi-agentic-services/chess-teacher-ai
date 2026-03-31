@@ -69,6 +69,15 @@ function App() {
     applyTo(moves.length);
   };
 
+  const slowPlayToEnd = async () => {
+    for (let t = idx + 1; t <= moves.length; t++) {
+      applyTo(t);
+      // 5 moves every 2s => 400ms per move
+      // eslint-disable-next-line no-await-in-loop
+      await new Promise((r) => setTimeout(r, 400));
+    }
+  };
+
   const applyTreeMove = (uci: string) => {
     const c = new Chess(chess.fen());
     const mv = c.move({ from: uci.slice(0, 2), to: uci.slice(2, 4), promotion: uci.length > 4 ? (uci[4] as any) : undefined });
@@ -116,6 +125,7 @@ function App() {
           <button data-testid="prev-move" onClick={() => applyTo(Math.max(0, idx - 1))}>Prev</button>
           <button data-testid="next-move" onClick={() => applyTo(Math.min(moves.length, idx + 1))}>Next</button>
           <button data-testid="play-to-end" onClick={playToEnd}>Play to End</button>
+          <button data-testid="slow-play" onClick={slowPlayToEnd}>Slow Play (5/2s)</button>
           <span data-testid="move-progress" className="progress">Move {idx}/{moves.length}</span>
         </div>
         {selected && <p data-testid="loaded-game-id" className="loaded">Loaded: {selected.id}</p>}

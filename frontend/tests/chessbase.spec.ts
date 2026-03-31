@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('player search Roberto de Abreu and play through 10 games', async ({ page }) => {
+async function runSingleGame(page: any, gameIndex: number) {
   await page.goto('/');
 
   await page.getByTestId('player-search').fill('Roberto de Abreu');
@@ -10,21 +10,29 @@ test('player search Roberto de Abreu and play through 10 games', async ({ page }
   await expect(loadButtons.first()).toBeVisible({ timeout: 60000 });
 
   const total = await loadButtons.count();
-  expect(total).toBeGreaterThan(0);
+  expect(total).toBeGreaterThan(gameIndex);
 
-  const runCount = Math.min(10, total);
+  await loadButtons.nth(gameIndex).click();
+  await expect(page.getByTestId('loaded-game-id')).toBeVisible();
 
-  for (let i = 0; i < runCount; i++) {
-    await loadButtons.nth(i).click();
-    await expect(page.getByTestId('loaded-game-id')).toBeVisible();
+  const firstTxt = await page.getByTestId('move-progress').textContent();
+  const first = firstTxt?.match(/Move\s+(\d+)\/(\d+)/);
+  expect(first).not.toBeNull();
+  const totalMoves = Number(first![2]);
+  expect(totalMoves).toBeGreaterThan(0);
 
-    await page.getByTestId('play-to-end').click();
+  await page.getByTestId('slow-play').click();
+
+  await expect.poll(async () => {
     const txt = await page.getByTestId('move-progress').textContent();
-    expect(txt).toMatch(/Move\s+\d+\/\d+/);
+    const m = txt?.match(/Move\s+(\d+)\/(\d+)/);
+    if (!m) return false;
+    return Number(m[1]) === Number(m[2]);
+  }, { timeout: 300000 }).toBe(true);
+}
 
-    // verify completed playback (left == right)
-    const m = txt!.match(/Move\s+(\d+)\/(\d+)/);
-    expect(m).not.toBeNull();
-    expect(Number(m![1])).toBe(Number(m![2]));
-  }
-});
+for (let i = 0; i < 10; i++) {
+  test(`player search Roberto de Abreu and slow-play game #${i + 1}`, async ({ page }) => {
+    await runSingleGame(page, i);
+  });
+}
