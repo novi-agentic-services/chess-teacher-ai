@@ -1,0 +1,79 @@
+:root {
+  --bg: #0b1020;
+  --panel: #121a30;
+  --panel-2: #17233f;
+  --border: #2e3c67;
+  --text: #ebf1ff;
+  --muted: #a9b8e4;
+  --accent: #5da8ff;
+  --good: #22c55e;
+  --draw: #f59e0b;
+  --bad: #ef4444;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, Arial, sans-serif; background: radial-gradient(circle at top, #1b2a4b, var(--bg)); color: var(--text); }
+
+.app {
+  display: grid;
+  grid-template-columns: 320px 1fr 360px;
+  gap: 12px;
+  height: 100vh;
+  padding: 12px;
+}
+
+.panel {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  padding: 10px;
+  overflow: auto;
+}
+
+.panel h2, .panel h3 { margin: 0 0 10px; }
+.search-row { display: flex; gap: 8px; }
+.search-row input { flex: 1; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: #0f1630; color: var(--text); }
+button {
+  border: 1px solid #4f6db8;
+  background: #1f3b79;
+  color: #f5f8ff;
+  border-radius: 8px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+button:hover { background: #2a4f9e; }
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.game-card {
+  border: 1px solid #2a3a66;
+  border-radius: 8px;
+  padding: 7px;
+  margin-bottom: 7px;
+  background: rgba(255,255,255,0.02);
+}
+.game-title { font-weight: 700; font-size: 13px; }
+.game-meta { font-size: 12px; color: var(--muted); margin: 3px 0 7px; }
+
+.board-wrap { max-width: 560px; }
+.controls { margin-top: 8px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.progress { font-size: 13px; color: var(--muted); margin-left: 6px; }
+.loaded { font-size: 12px; color: var(--muted); }
+
+.tree-row {
+  border-bottom: 1px solid #2a3a66;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.tree-row:hover { background: rgba(255,255,255,0.03); }
+.tree-top { display: flex; justify-content: space-between; font-size: 13px; }
+.bars { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; margin-top: 5px; }
+.bar { height: 7px; border-radius: 999px; }
+.w { background: var(--good); }
+.d { background: var(--draw); }
+.b { background: var(--bad); }
+.empty { color: var(--muted); font-size: 13px; }
+
+@media (max-width: 1100px) {
+  .app { grid-template-columns: 1fr; height: auto; }
+  .panel { min-height: 240px; }
+}
