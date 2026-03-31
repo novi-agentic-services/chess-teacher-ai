@@ -25,6 +25,7 @@ def main():
     ap.add_argument("--min-plies", type=int, default=12)
     ap.add_argument("--batch-size", type=int, default=1000)
     ap.add_argument("--sleep-ms", type=int, default=100)
+    ap.add_argument("--queue", default="analysis.lc0")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -63,7 +64,7 @@ def main():
     queued = 0
     if not args.dry_run:
         for i, gid in enumerate(ids, start=1):
-            celery_app.send_task("worker.analyze_game_lc0", args=[gid, args.depth], queue="analysis.lc0")
+            celery_app.send_task("worker.analyze_game_lc0", args=[gid, args.depth], queue=args.queue)
             queued += 1
             if i % args.batch_size == 0:
                 print({"progress": i, "queued": queued})
@@ -76,6 +77,7 @@ def main():
             "queued_games": queued,
             "depth": args.depth,
             "min_plies": args.min_plies,
+            "queue": args.queue,
             "dry_run": args.dry_run,
         }
     )
