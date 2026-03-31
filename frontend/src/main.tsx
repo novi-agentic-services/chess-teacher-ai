@@ -21,6 +21,14 @@ type TreeMove = {
   black_win_pct: number;
 };
 
+type PlayerProfile = {
+  player_query: string;
+  info: { total_games: number; first_game?: string | null; last_game?: string | null; distinct_opponents: number };
+  scores: { white: { wins: number; draws: number; losses: number }; black: { wins: number; draws: number; losses: number } };
+  common_openings: { opening: string; games: number }[];
+  rating_chart: { month: string; avg_elo: number; samples: number }[];
+};
+
 const API_BASE = 'http://127.0.0.1:8000';
 
 function App() {
@@ -32,6 +40,8 @@ function App() {
   const [idx, setIdx] = React.useState(0);
   const [tree, setTree] = React.useState<TreeMove[]>([]);
   const [searching, setSearching] = React.useState(false);
+  const [profile, setProfile] = React.useState<PlayerProfile | null>(null);
+  const [loadingProfile, setLoadingProfile] = React.useState(false);
 
   const searchGames = async (q: string) => {
     setSearching(true);
@@ -84,6 +94,17 @@ function App() {
     if (mv) setChess(c);
   };
 
+  const loadProfile = async () => {
+    setLoadingProfile(true);
+    try {
+      const res = await fetch(`${API_BASE}/api/players/profile?name=${encodeURIComponent(query)}`);
+      const data = await res.json();
+      setProfile(data);
+    } finally {
+      setLoadingProfile(false);
+    }
+  };
+
   React.useEffect(() => {
     searchGames(query).catch(console.error);
   }, []);
@@ -103,6 +124,7 @@ function App() {
         <div className="search-row">
           <input data-testid="player-search" value={query} onChange={(e) => setQuery(e.target.value)} />
           <button data-testid="search-btn" onClick={() => searchGames(query)} disabled={searching}>{searching ? 'Searching…' : 'Search'}</button>
+          <button data-testid="profile-btn" onClick={loadProfile} disabled={loadingProfile}>{loadingProfile ? 'Loading…' : 'Profile'}</button>
         </div>
         <div style={{ marginTop: 12 }}>
           {games.map((g) => (
@@ -148,6 +170,48 @@ function App() {
           </div>
         ))}
         {!tree.length && <div className="empty">No known continuations from this position.</div>}
+
+        <div style={{ marginTop: 14 }}>
+          <h3 style={{ marginBottom: 8 }}>Player Profile</h3>
+          {!profile && <div className="empty">Load a player profile to view score split, openings, rating trend and player info.</div>}
+          {profile && (
+            <div>
+              <div className="game-meta">{profile.player_query} • {profile.info.total_games} games • {profile.info.distinct_opponents} opponents</div>
+              <div className="game-meta">First: {profile.info.first_game || '-'} • Last: {profile.info.last_game || '-'}</div>
+
+              <div style={{ marginTop: 8, fontSize: 12 }}>
+                <b>White</b> W {profile.scores.white.wins} / D {profile.scores.white.draws} / L {profile.scores.white.losses}
+              </div>
+              <div style={{ fontSize: 12, marginBottom: 8 }}>
+                <b>Black</b> W {profile.scores.black.wins} / D {profile.scores.black.draws} / L {profile.scores.black.losses}
+              </div>
+
+              <div style={{ marginTop: 8 }}>
+                <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 6 }}>Most Common Openings</div>
+                {profile.common_openings.slice(0, 8).map((o) => (
+                  <div key={o.opening} style={{ fontSize: 12, borderBottom: '1px solid #2a3a66', padding: '4px 0' }}>
+                    {o.opening} • {o.games}
+                  </div>
+                ))}
+              </div>
+
+              <div style={{ marginTop: 10 }}>
+                <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 6 }}>Rating Chart (avg by month)</div>
+                <div style={{ maxHeight: 120, overflow: 'auto' }}>
+                  {profile.rating_chart.slice(-24).map((r) => (
+                    <div key={r.month} style={{ display: 'grid', gridTemplateColumns: '80px 1fr 48px', gap: 6, alignItems: 'center', marginBottom: 3 }}>
+                      <div style={{ fontSize: 11, color: '#a9b8e4' }}>{r.month.slice(0, 7)}</div>
+                      <div style={{ height: 6, background: '#2a3a66', borderRadius: 999 }}>
+                        <div style={{ height: '100%', width: `${Math.max(5, Math.min(100, (r.avg_elo - 2000) / 8))}%`, background: '#5da8ff', borderRadius: 999 }} />
+                      </div>
+                      <div style={{ fontSize: 11 }}>{r.avg_elo}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </aside>
     </div>
   );

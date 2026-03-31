@@ -234,6 +234,111 @@ def game_evaluations(game_id: str, engine: str = "lc0", limit: int = Query(defau
     }
 
 
+@app.get("/api/players/profile")
+def player_profile(name: str):
+    tokens = [t.strip() for t in name.split() if t.strip()]
+    if not tokens:
+        return {
+            "player_query": name,
+            "info": {"total_games": 0, "first_game": None, "last_game": None, "distinct_opponents": 0},
+            "scores": {"white": {"wins": 0, "draws": 0, "losses": 0}, "black": {"wins": 0, "draws": 0, "losses": 0}},
+            "common_openings": [],
+            "rating_chart": [],
+        }
+
+    clauses = []
+    params = []
+    for t in tokens:
+        like = f"%{t}%"
+        clauses.append("(white_player ILIKE %s OR black_player ILIKE %s)")
+        params.extend([like, like])
+    where_tokens = " AND ".join(clauses)
+    p = tuple(params)
+
+    with get_conn() as conn, conn.cursor() as cur:
+        cur.execute(
+            f"""
+            SELECT
+              COUNT(*) AS total_games,
+              MIN(game_date) AS first_game,
+              MAX(game_date) AS last_game,
+              COUNT(DISTINCT CASE WHEN white_player ILIKE %s THEN black_player ELSE white_player END) AS opponents
+            FROM games
+            WHERE {where_tokens}
+            """,
+            tuple([f"%{tokens[0]}%"] + list(p)),
+        )
+        total_games, first_game, last_game, opponents = cur.fetchone()
+
+        cur.execute(
+            f"""
+            SELECT
+              SUM(CASE WHEN white_player ILIKE %s AND result='1-0' THEN 1 ELSE 0 END) AS white_wins,
+              SUM(CASE WHEN white_player ILIKE %s AND result='1/2-1/2' THEN 1 ELSE 0 END) AS white_draws,
+              SUM(CASE WHEN white_player ILIKE %s AND result='0-1' THEN 1 ELSE 0 END) AS white_losses,
+              SUM(CASE WHEN black_player ILIKE %s AND result='0-1' THEN 1 ELSE 0 END) AS black_wins,
+              SUM(CASE WHEN black_player ILIKE %s AND result='1/2-1/2' THEN 1 ELSE 0 END) AS black_draws,
+              SUM(CASE WHEN black_player ILIKE %s AND result='1-0' THEN 1 ELSE 0 END) AS black_losses
+            FROM games
+            WHERE {where_tokens}
+            """,
+            tuple([f"%{tokens[0]}%"] * 6 + list(p)),
+        )
+        ww, wd, wl, bw, bd, bl = cur.fetchone()
+
+        cur.execute(
+            f"""
+            SELECT COALESCE(opening, 'Unknown Opening') AS opening, COUNT(*) AS c
+            FROM games
+            WHERE {where_tokens}
+            GROUP BY COALESCE(opening, 'Unknown Opening')
+            ORDER BY c DESC
+            LIMIT 10
+            """,
+            p,
+        )
+        openings = cur.fetchall()
+
+        cur.execute(
+            f"""
+            WITH r AS (
+              SELECT date_trunc('month', game_date) AS m, white_elo AS elo
+              FROM games
+              WHERE white_elo IS NOT NULL AND game_date IS NOT NULL AND {where_tokens}
+              UNION ALL
+              SELECT date_trunc('month', game_date) AS m, black_elo AS elo
+              FROM games
+              WHERE black_elo IS NOT NULL AND game_date IS NOT NULL AND {where_tokens}
+            )
+            SELECT m::date, ROUND(AVG(elo))::int AS avg_elo, COUNT(*) AS samples
+            FROM r
+            GROUP BY m
+            ORDER BY m
+            """,
+            p + p,
+        )
+        ratings = cur.fetchall()
+
+    return {
+        "player_query": name,
+        "info": {
+            "total_games": int(total_games or 0),
+            "first_game": first_game.isoformat() if first_game else None,
+            "last_game": last_game.isoformat() if last_game else None,
+            "distinct_opponents": int(opponents or 0),
+        },
+        "scores": {
+            "white": {"wins": int(ww or 0), "draws": int(wd or 0), "losses": int(wl or 0)},
+            "black": {"wins": int(bw or 0), "draws": int(bd or 0), "losses": int(bl or 0)},
+        },
+        "common_openings": [{"opening": o[0], "games": int(o[1])} for o in openings],
+        "rating_chart": [
+            {"month": r[0].isoformat() if r[0] else None, "avg_elo": int(r[1] or 0), "samples": int(r[2] or 0)}
+            for r in ratings
+        ],
+    }
+
+
 @app.get("/api/positions/tree")
 def position_tree(fen: str, limit: int = Query(default=40, le=200)):
     with get_conn() as conn, conn.cursor() as cur:
