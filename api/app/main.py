@@ -1,11 +1,18 @@
 from typing import Optional
 
 from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
 from .db import get_conn
 from .twic import discover_twic_sources
 from .celery_client import celery_app
 
 app = FastAPI(title="chess-teacher-ai API", version="0.2.0")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/health")
@@ -86,9 +93,16 @@ def games_search(
     params = []
 
     if q:
-        where.append("(white_player ILIKE %s OR black_player ILIKE %s OR event ILIKE %s)")
-        qv = f"%{q}%"
-        params.extend([qv, qv, qv])
+        tokens = [t.strip() for t in q.split() if t.strip()]
+        if tokens:
+            for t in tokens:
+                where.append("(white_player ILIKE %s OR black_player ILIKE %s OR event ILIKE %s)")
+                tv = f"%{t}%"
+                params.extend([tv, tv, tv])
+        else:
+            where.append("(white_player ILIKE %s OR black_player ILIKE %s OR event ILIKE %s)")
+            qv = f"%{q}%"
+            params.extend([qv, qv, qv])
     if white:
         where.append("white_player ILIKE %s")
         params.append(f"%{white}%")
