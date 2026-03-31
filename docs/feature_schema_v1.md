@@ -46,6 +46,15 @@ Task: predict Leela Zero centipawn evaluation per position.
   - `white_knight_outposts`,`black_knight_outposts`
   - `best_capture_gain_white`,`best_capture_gain_black`
 
+## Training stack
+
+Recommended training stack (now supported by `scripts/train_eval_lgbm.py`):
+
+- `numpy`
+- `pandas`
+- `scikit-learn`
+- `lightgbm` (primary), with sklearn fallback
+
 ## Splits
 
 Time-ordered split by `game_date`:
