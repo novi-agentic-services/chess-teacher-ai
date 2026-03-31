@@ -173,20 +173,20 @@ function App() {
 
         <div style={{ marginTop: 14 }}>
           <h3 style={{ marginBottom: 8 }}>Player Profile</h3>
-          {!profile && <div className="empty">Load a player profile to view score split, openings, rating trend and player info.</div>}
+          {!profile && <div data-testid="profile-empty" className="empty">Load a player profile to view score split, openings, rating trend and player info.</div>}
           {profile && (
-            <div>
-              <div className="game-meta">{profile.player_query} • {profile.info.total_games} games • {profile.info.distinct_opponents} opponents</div>
+            <div data-testid="profile-panel">
+              <div data-testid="profile-info" className="game-meta">{profile.player_query} • {profile.info.total_games} games • {profile.info.distinct_opponents} opponents</div>
               <div className="game-meta">First: {profile.info.first_game || '-'} • Last: {profile.info.last_game || '-'}</div>
 
-              <div style={{ marginTop: 8, fontSize: 12 }}>
+              <div data-testid="profile-score-white" style={{ marginTop: 8, fontSize: 12 }}>
                 <b>White</b> W {profile.scores.white.wins} / D {profile.scores.white.draws} / L {profile.scores.white.losses}
               </div>
-              <div style={{ fontSize: 12, marginBottom: 8 }}>
+              <div data-testid="profile-score-black" style={{ fontSize: 12, marginBottom: 8 }}>
                 <b>Black</b> W {profile.scores.black.wins} / D {profile.scores.black.draws} / L {profile.scores.black.losses}
               </div>
 
-              <div style={{ marginTop: 8 }}>
+              <div data-testid="profile-openings" style={{ marginTop: 8 }}>
                 <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 6 }}>Most Common Openings</div>
                 {profile.common_openings.slice(0, 8).map((o) => (
                   <div key={o.opening} style={{ fontSize: 12, borderBottom: '1px solid #2a3a66', padding: '4px 0' }}>
@@ -195,7 +195,7 @@ function App() {
                 ))}
               </div>
 
-              <div style={{ marginTop: 10 }}>
+              <div data-testid="profile-rating-chart" style={{ marginTop: 10 }}>
                 <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 6 }}>Rating Chart (avg by month)</div>
                 <div style={{ maxHeight: 120, overflow: 'auto' }}>
                   {profile.rating_chart.slice(-24).map((r) => (
